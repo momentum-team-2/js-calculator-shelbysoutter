@@ -1,0 +1,42 @@
+body {
+    background-color: grey;
+}
+
+.button {
+    background-color: aqua;
+    margin: 1px;
+    display: table;
+}
+
+#C {
+    display: center;
+    flex: space-between;
+    border: 2px solid black;
+    padding: 5%;
+    margin-right: 400px;
+}
+
+.row-1 {
+    display: flex;
+    flex: space-evenly;
+    
+}
+
+.row-2 {
+    display: flex;
+    flex: space-evenly;
+}
+
+.row-3 {
+    display: flex;
+    flex: space-evenly;
+}
+
+.row-4 {
+    display: flex;
+    flex: space-evenly;
+}
+
+.button {
+    border: 1px solid black;
+}

@@ -5,33 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <div class = "button" id="C">C</div>
-    <div class = "row-1">
-        <div class = "button" id="seven">7</div>
-        <div class = "button" id="eight">8</div>
-        <div class = "button" id="nine">9</div>
-        <div class = "button" id="slash">/</div>
-    </div>
-    <div class = "row-2">
-        <div class = "button" id="four">4</div>
-        <div class = "button" id="five">5</div>
-        <div class = "button" id="six">6</div>
-        <div class = "button" id="times">X</div>
-    </div>
-    <div class="row-3">
-        <div class = "button" id="one">1</div>
-        <div class = "button" id="two">2</div>
-        <div class = "button" id="three">3</div>
-        <div class="button" id="minus">-</div>
-    </div>
-    <div class="row-4">
-        <div class = "button" id="zero">0</div>
-        <div class = "button" id="decimal">.</div>
-        <div class = "button" id="equal">=</div>
-        <div class = "button" id="plus">+</div>
+    <div class = "main">
+        <table>
+            <tr>
+                <td><input class = "button" id = "C" type="button" value='C'></td>
+                <td><input class = "button" id = "display" type="p" value=''></td>
+            </tr>
+            <tr>
+                <td><input class = "button" id = "seven" type="button" value='7'></td>
+                <td><input class = "button" id = "eight" type="button" value='8'></td>
+                <td><input class = "button" id = "nine" type="button" value='9'></td>
+                <td><input class = "button" id = "divide" type="button" value='/'></td>
+            </tr>
+            <tr>
+                <td><input class = "button" id = "four" type="button" value='4'></td>
+                <td><input class = "button" id = "five" type="button" value='5'></td>
+                <td><input class = "button" id = "six" type="button" value='6'></td>
+                <td><input class = "button" id = "times" type="button" value='X'></td>
+            </tr>
+            <tr>
+                <td><input class = "button" id = "one" type="button" value='1'></td>
+                <td><input class = "button" id = "two" type="button" value='2'></td>
+                <td><input class = "button" id = "three" type="button" value='3'></td>
+                <td><input class = "button" id = "minus" type="button" value='-'></td>
+            </tr>
+            <tr>
+                <td><input class = "button" id = "zero" type="button" value='0'></td>
+                <td><input class = "button" id = "decimal" type="button" value='.'></td>
+                <td><input class = "button" id = "equal" type="button" value='='></td>
+                <td><input class = "button" id = "plus" type="button" value='+'></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

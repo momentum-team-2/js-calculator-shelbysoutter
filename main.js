@@ -1,57 +1,62 @@
 //event listeners for button clicks
+let dog = document.querySelector("#display")
+
+dog.value = ""
+
+
 let button_7 = document.querySelector("#seven")
 button_7.addEventListener("click", function(event) {
-    console.log (7)
+    dog.value += "7"
 })
 
 let button_8 = document.querySelector("#eight")
 button_8.addEventListener("click", function(event) {
-    console.log (8)
+    dog.value += "8"
 })
 
 let button_9 = document.querySelector("#nine")
 button_9.addEventListener("click", function(event) {
-    console.log (9)
+    dog.value += "9"
 })
 
-let button_slash = document.querySelector("#slash")
+let button_slash = document.querySelector("#divide")
 button_slash.addEventListener("click", function(event) {
-    console.log ("/")
+    eval(dog.value)
 })
 
 let button_4 = document.querySelector("#four")
 button_4.addEventListener("click", function(event) {
-    console.log (4)
+    dog.value += "4"
 })
 
 let button_5 = document.querySelector("#five")
 button_5.addEventListener("click", function(event) {
-    console.log (5)
+    dog.value += "5"
 })
 
 let button_6 = document.querySelector("#six")
 button_6.addEventListener("click", function(event) {
-    console.log (6)
+    dog.value += "6"
 })
 
 let button_0 = document.querySelector("#zero")
 button_0.addEventListener("click", function(event) {
-    console.log (0)
+    dog.value += "0"
 })
 
 let button_1 = document.querySelector("#one")
 button_1.addEventListener("click", function(event) {
-    console.log (1)
+    dog.value += "1"
 })
 
 let button_2 = document.querySelector("#two")
 button_2.addEventListener("click", function(event) {
-    console.log (2)
+    dog.value += "2"
 })
 
 let button_3 = document.querySelector("#three")
 button_3.addEventListener("click", function(event) {
-    console.log (3)
+    dog.value += "3"
 })
 
 let button_decimal = document.querySelector("#decimal")
@@ -61,7 +66,7 @@ button_decimal.addEventListener("click", function(event) {
 
 let button_equal = document.querySelector("#equal")
 button_equal.addEventListener("click", function(event) {
-    console.log ("=")
+    eval(dog.value)
 })
 
 let button_plus = document.querySelector("#plus")

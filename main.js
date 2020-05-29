@@ -20,9 +20,7 @@ button_9.addEventListener("click", function(event) {
 })
 
 let button_slash = document.querySelector("#divide")
-button_slash.addEventListener("click", function(event) {
-    eval(dog.value)
-})
+button_slash.addEventListener("click", math)
 
 let button_4 = document.querySelector("#four")
 button_4.addEventListener("click", function(event) {
@@ -61,7 +59,7 @@ button_3.addEventListener("click", function(event) {
 
 let button_decimal = document.querySelector("#decimal")
 button_decimal.addEventListener("click", function(event) {
-    console.log (".")
+    dog.value += "."
 })
 
 let button_equal = document.querySelector("#equal")
@@ -70,6 +68,20 @@ button_equal.addEventListener("click", function(event) {
 })
 
 let button_plus = document.querySelector("#plus")
-button_plus.addEventListener("click", function(event) {
-    console.log ("+")
-})
+button_plus.addEventListener("click", math)
+
+let button_C = document.querySelector("#C")
+button_C.addEventListener("click", clearDisplay)
+
+//functions to reset display/perform mathematical function
+
+function clearDisplay() {
+    dog = ""
+    dog.innerHTML = ""
+}
+
+function math() {
+    let value = eval (dog)
+    value = dog
+    setInnerHTML(value)
+}
